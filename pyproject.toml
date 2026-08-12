@@ -1,0 +1,25 @@
+[project]
+name = "rx-insight"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Owen Eldridge", email = "oweneldridge7@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "jupyterlab>=4.5.10",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.6.1",
+    "torch>=2.8.0",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+rx-insight = "rx_insight:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
